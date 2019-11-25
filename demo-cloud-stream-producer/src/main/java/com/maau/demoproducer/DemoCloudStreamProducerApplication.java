@@ -6,10 +6,10 @@ import org.springframework.cloud.stream.annotation.EnableBinding;
 
 @SpringBootApplication
 @EnableBinding(MaauTopic.class)
-public class DemoProducerApplication {
+public class DemoCloudStreamProducerApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(DemoProducerApplication.class, args);
+        SpringApplication.run(DemoCloudStreamProducerApplication.class, args);
     }
 
 }

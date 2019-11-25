@@ -10,10 +10,10 @@ import org.springframework.messaging.handler.annotation.Payload;
 @SpringBootApplication
 @EnableBinding(MaauTopic.class)
 @Slf4j
-public class DemoKafkaCloudStreamApplication {
+public class DemoCloudStreamConsumerApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(DemoKafkaCloudStreamApplication.class, args);
+        SpringApplication.run(DemoCloudStreamConsumerApplication.class, args);
     }
 
     @StreamListener(MaauTopic.INPUT)
