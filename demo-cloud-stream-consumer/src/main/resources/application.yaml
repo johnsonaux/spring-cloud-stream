@@ -1,0 +1,25 @@
+spring:
+  cloud:
+    stream:
+#      kafka:
+#        binder:
+#          brokers: localhost:9092
+      bindings:
+        greetings-in:
+          destination: greetings
+          contentType: application/json
+          group: testGroup
+      binders:
+        ivp_rabbit:
+          type: rabbit
+          environment:
+            spring:
+              rabbitmq:
+                host: localhost
+                port: 5672
+#        greetings-out:
+#          destination: greetings
+#          contentType: application/json
+
+server:
+  port: 8077
